@@ -51,7 +51,8 @@ class _ImageCardState extends State<ImageCard> {
             ),
           ),
           CachedNetworkImage(
-            placeholder: (context, url) => const CircularProgressIndicator(),
+            placeholder: (context, url) =>
+                const Center(child: CircularProgressIndicator()),
             imageUrl: widget.imageURL,
             width: MediaQuery.of(context).size.width,
           ),
